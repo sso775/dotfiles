@@ -1,0 +1,9 @@
+[submodule ".vim/neobundle.vim.git"]
+  path = .vim/neobundle.vim.git
+  url = https://github.com/Shougo/neobundle.vim
+[submodule ".emacs.d/site-lisp/gist.el"]
+  path = .emacs.d/site-lisp/gist.el
+  url = git://github.com/defunkt/gist.el.git
+[submodule ".emacs.d/site-lisp/anything-gist.el"]
+  path = .emacs.d/site-lisp/anything-gist.el
+  url = git://gist.github.com/467982.git

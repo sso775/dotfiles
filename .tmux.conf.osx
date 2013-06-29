@@ -1,0 +1,36 @@
+# tmux config for osx
+# copy as .tmux.conf.local to use
+
+set-option -g default-shell /usr/local/bin/zsh
+unbind C-b
+set-option -g prefix C-t
+
+# reattach-to-user-namespace
+set-option -g default-command "reattach-to-user-namespace -l zsh"
+
+# enable mouse
+set -g mode-mouse on
+set -g mouse-resize-pane on
+set -g mouse-select-pane on
+set -g mouse-select-window on
+
+# status line
+set -g status-bg magenta
+set -g status-fg white
+set -g status-attr dim
+set -g status-left '#[fg=white,bold][#20(whoami)@#H]#[default]'
+set -g status-right '#[fg=white,bold][%Y/%m/%d(%a)%H:%M]#[default]'
+set -g message-attr bold
+set -g message-fg white
+set -g message-bg red
+
+set -g pane-active-border-fg white
+set -g pane-active-border-bg black
+
+set-window-option -g mode-bg white
+set-window-option -g mode-fg black
+set-window-option -g window-status-bg magenta
+set-window-option -g window-status-fg white
+set-window-option -g window-status-current-bg black
+set-window-option -g window-status-current-fg magenta
+set-window-option -g window-status-current-attr bold

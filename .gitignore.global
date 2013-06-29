@@ -1,0 +1,14 @@
+*.o
+\#*#
+*#
+.#*
+.*~
+*~
+.DS_Store
+tags
+TAGS
+Session.vim
+.svn
+*.log
+*.aux
+wget-log*

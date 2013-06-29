@@ -1,0 +1,8 @@
+.vim/bundle/
+
+doc/tags
+doc/tags-ja
+
+.emacs.d/scratch-log*
+.emacs.d/ac-comphist.dat
+.irssi/config

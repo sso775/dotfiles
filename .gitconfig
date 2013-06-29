@@ -1,0 +1,24 @@
+[user]
+  name = sso775
+  email = sso.775.0501@gmail.com
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  grep = auto
+[core]
+  excludesfile = ~/.gitignore.global
+[alias]
+  st = status
+  ss = status -s
+  sh = show
+  so = remote show origin
+  gr = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
+[tig "bind"]
+  generic = g move-first-line
+  generic = G move-last-line
+
+# [github]
+#   user = sso775
+#   token = -- /etc/gitconfig --

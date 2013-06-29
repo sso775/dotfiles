@@ -1,0 +1,14 @@
+alias ls='ls -G -F'
+alias ll='ls -l -F'
+alias del='rm -i'
+alias df='df -h'
+alias du='du -h'
+alias grep='grep --color'
+
+# 頭にsをつけてコマンドを入力するとそのコマンド名で新しいscreen
+alias s='screen -U'
+
+alias gd='dirs -v; echo -n "select number: "; read newdir; cd "$newdir"'
+
+# https://launchpad.net/ithief/
+alias lyric='ithief l'
