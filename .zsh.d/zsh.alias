@@ -12,3 +12,7 @@ alias gd='dirs -v; echo -n "select number: "; read newdir; cd "$newdir"'
 
 # https://launchpad.net/ithief/
 alias lyric='ithief l'
+
+# brew install exa
+# うまいこといかんやん
+# alias ls='exa --time-style=lang-iso -g'

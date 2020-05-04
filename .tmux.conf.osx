@@ -6,10 +6,12 @@ unbind C-b
 set-option -g prefix C-t
 
 # reattach-to-user-namespace
-set-option -g default-command "reattach-to-user-namespace -l zsh"
+# set-option -g default-command "reattach-to-user-namespace -l zsh"
 
 # enable mouse
-set -g mode-mouse on
+set -g mouse on
+bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'copy-mode -e'"
+bind -n WheelDownPane select-pane -t= \; send-keys -M
 set -g mouse-resize-pane on
 set -g mouse-select-pane on
 set -g mouse-select-window on
